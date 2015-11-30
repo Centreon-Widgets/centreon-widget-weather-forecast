@@ -1,0 +1,101 @@
+
+.title {
+    text-align: center;
+}
+
+.img {
+    text-align: center;
+}
+
+.img-200:Before,
+.img-201:Before,
+.img-202:Before,
+.img-210:before,
+.img-211:before,
+.img-212:before,
+.img-221:before,
+.img-230:before,
+.img-231:before,
+.img-232:before{
+    content: url("../resources/icon-svg/200.svg");
+}
+
+.img-300:before{
+    content : url("../resources/icon-svg/300.svg");
+}
+
+.img-301:before,
+.img-302:before,
+.img-310:before,
+.img-311:before,
+.img-312:before,
+.img-313:before,
+.img-314:before,
+.img-321:before,
+.img-314:before,
+.img-701:before,
+.img-711:before,
+.img-721:before,
+.img-731:before,
+.img-741:before,
+.img-751:before,
+.img-761:before,
+.img-762:before,
+.img-771:before,
+.img-781:before{
+    content: url("../resources/icon-svg/301.svg");
+}
+
+.img-500:before,
+.img-501:before{
+    content: url("../resources/icon-svg/500.svg");
+}
+
+.img-502:before{
+    content: url("../resources/icon-svg/502.svg");
+}
+
+.img-503:before
+.img-504:before,
+.img-511:before,
+.img-520:before,
+.img-521:before,
+.img-222:before,
+.img-531:before{    
+    content: url("../resources/icon-svg/503.svg");
+}
+
+.img-600:before
+.img-601:before,
+.img-602:before,
+.img-611:before,
+.img-612:before,
+.img-615:before,
+.img-616:before{
+    content: url("../resources/icon-svg/500.svg");
+}
+
+.img-620:before,
+.img-621:before,
+.img-622:before{
+    content: url("../resources/icon-svg/621.svg");
+}
+
+.img-800:before{
+    content: url("../resources/icon-svg/800.svg");
+}
+
+.img-801:before{
+    content: url("../resources/icon-svg/801.svg");
+}
+
+.img-802:before{
+    content: url("../resources/icon-svg/802.svg");
+}
+
+.img-803:before,
+.img-804:before{
+    content: url("../resources/icon-svg/804.svg");
+}
+
+

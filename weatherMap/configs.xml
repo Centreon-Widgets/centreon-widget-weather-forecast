@@ -1,0 +1,22 @@
+<configs>
+  <title>WeatherMap</title>
+  <author>Centreon</author>
+  <email>contact@centreon.com</email>
+  <website>http://www.centreon.com</website>
+  <description>WeatherMap</description>
+        <version>1.0.0</version>
+        <keywords>centreon, widget, WeatherMap</keywords>
+        <screenshot></screenshot>
+        <thumbnail>./widgets/weatherMap/resources/logo1.png</thumbnail>
+        <url>./widgets/weatherMap/index.php</url>
+        <autoRefresh>10</autoRefresh>
+	<preferences>
+	  <preference label="Name of the town" name="town" defaultValue="" type="text"/>
+	  <preference label="Appid" name="appid" defaultValue="" type="text"/>
+	  <preference label="Units Format :" name="units" defaultValue="" type="list">
+	  <option value="imperial" label="Farehrenheit" />
+	  <option value="metric" label="Celsius"/>
+	  <option value="Kelvin" label="Kelvin"/>
+	  </preference>
+	  </preferences>
+</configs>
