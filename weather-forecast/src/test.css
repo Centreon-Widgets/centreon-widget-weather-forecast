@@ -3,6 +3,26 @@
     text-align: center;
 }
 
+.wind {
+    text-align: left;
+    font-size: 15px;
+    width: 50%;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    background-color: #F8F8F8;
+}
+
+.temp {
+    font-size: 15px;
+    font-size: rigth;
+    width: 50%;
+    display: inline;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+}
+
 .img {
     text-align: center;
 }

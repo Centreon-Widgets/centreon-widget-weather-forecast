@@ -5,10 +5,12 @@
   {/literal}
 </style>
 <body>
-	<H2 id="temp" class="title"></h2>
+	<H2 class="title">{$town}</h2>
 	<div id="icon" class="img">
 	     <i class="img"></i>
 	</div>
+	<div id="wind" class="wind"></div>
+	<div id="temp" class="temp"></div>
 <script>
 var town = "{$town}";
 var appid = "{$appid}";
@@ -18,8 +20,10 @@ var unit = "{$unit}";
 <script>
 if (unit == "metric") {
    var unit2 = "°C";
+   var unit3 = "meter/sec";
 } else if (unit == "imperial") {
   var unit2 = "°F";
+  var unit3 = "miles/hour";
 }
 if (unit == "Kelvin") {
 jQuery.ajax({
@@ -37,8 +41,9 @@ jQuery.ajax({
   method: "get",
   dataType: "json",
   success: function (data) {
-   jQuery('#temp').text(town + ' , ' + Math.round(data.main.temp) + ' ' + unit2);
+   jQuery('#temp').text(Math.round(data.main.temp) + ' ' + unit2);
    jQuery('#icon > i.img').addClass('img-' + data.weather[0].id);
+   jQuery('#wind').text('vitesse du vent ' + data.wind.speed + ' ' + unit3); 
   }
 }); }
 </script>

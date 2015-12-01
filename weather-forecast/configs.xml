@@ -1,14 +1,14 @@
 <configs>
-  <title>WeatherMap</title>
+  <title>Weather-Forecast</title>
   <author>Centreon</author>
   <email>contact@centreon.com</email>
   <website>http://www.centreon.com</website>
-  <description>WeatherMap</description>
+  <description>weather-forecast</description>
         <version>1.0.0</version>
         <keywords>centreon, widget, WeatherMap</keywords>
         <screenshot></screenshot>
-        <thumbnail>./widgets/weatherMap/resources/logo1.png</thumbnail>
-        <url>./widgets/weatherMap/index.php</url>
+        <thumbnail>./widgets/weather-forecast/resources/logo1.png</thumbnail>
+        <url>./widgets/weather-forecast/index.php</url>
         <autoRefresh>10</autoRefresh>
 	<preferences>
 	  <preference label="Name of the town" name="town" defaultValue="" type="text"/>
