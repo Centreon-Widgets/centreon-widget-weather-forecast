@@ -48,26 +48,17 @@ require_once $centreon_path . 'www/class/centreonUtils.class.php';
 require_once $centreon_path . 'www/class/centreonACL.class.php';
 require_once $centreon_path . 'www/class/centreonHost.class.php';
 
- // Load specific Smarty class //
-
-require_once $centreon_path ."GPL_LIB/Smarty/libs/Smarty.class.php";
-
-error_log("Après require");
-
 // check if session is alive //
 session_start();
 if (!isset($_SESSION['centreon']) || !isset($_REQUEST['widgetId'])) {
     exit;
 }
 
-
 $db_centreon = new CentreonDB("centreon");
 $pearDB = $db_centreon;
 if (CentreonSession::checkSession(session_id(), $db_centreon) == 0) {
     exit;
 }
-
-error_log("Debut widget claire");
 
 // Configure new smarty object
 $path = $centreon_path . "www/widgets/weather-forecast/src/";
@@ -89,4 +80,3 @@ $template->assign('unit', $unit);
 $template->assign('town', $town);
 $template->assign('appid', $appid);
 $template->display('table.ihtml');
-?>

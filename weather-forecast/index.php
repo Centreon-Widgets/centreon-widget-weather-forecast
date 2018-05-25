@@ -42,7 +42,7 @@ require_once $centreon_path . 'www/class/centreonWidget.class.php';
 session_start();
 
 if (!isset($_SESSION['centreon']) || !isset($_REQUEST['widgetId'])) {
-  print "DDD";
+    print "DDD";
     exit;
 }
 $centreon = $_SESSION['centreon'];
@@ -100,19 +100,16 @@ try {
     var timeout;
     
 jQuery(function() {
-    console.log("jQuery function");
-        loadTop10();
+    loadTop10();
 });
     
 function loadTop10() {
     jQuery.ajax("./src/data.php?widgetId="+widgetId, {
         success : function(htmlData) {
-             console.log("Success load");
             jQuery("#weatherMap").html("");
             jQuery("#weatherMap").html(htmlData);
             var h = document.getElementById("weatherMap").scrollHeight + 10;
             if(h){
-                console.log("h recupérée");
                 parent.iResize(window.name, h);
             }else{
                 parent.iResize(window.name, 200);
