@@ -108,7 +108,7 @@ function loadTop10() {
         success : function(htmlData) {
             jQuery("#weatherMap").html("");
             jQuery("#weatherMap").html(htmlData);
-            var h = document.getElementById("weatherMap").scrollHeight + 10;
+            var h = jquery("weatherMap").prop("scrollHeight") + 10;
             if(h){
                 parent.iResize(window.name, h);
             }else{
