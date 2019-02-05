@@ -4,7 +4,7 @@
   <email>contact@centreon.com</email>
   <website>http://www.centreon.com</website>
   <description>weather-forecast</description>
-        <version>18.10.0</version>
+        <version>19.04.0</version>
         <keywords>centreon, widget, WeatherMap</keywords>
         <screenshot></screenshot>
         <thumbnail>./widgets/weather-forecast/resources/logo1.png</thumbnail>
